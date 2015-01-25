@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F1B0E941A6A71A1006F5AF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B0E931A6A71A1006F5AF6 /* main.m */; };
+		5F1B0E971A6A71A1006F5AF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B0E961A6A71A1006F5AF6 /* AppDelegate.m */; };
+		5F1B0E9D1A6A71A1006F5AF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B0E9B1A6A71A1006F5AF6 /* Main.storyboard */; };
+		5F1B0E9F1A6A71A1006F5AF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B0E9E1A6A71A1006F5AF6 /* Images.xcassets */; };
+		5F1B0EA21A6A71A1006F5AF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B0EA01A6A71A1006F5AF6 /* LaunchScreen.xib */; };
+		5F1B0EAE1A6A71A1006F5AF6 /* KYMagicMoveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B0EAD1A6A71A1006F5AF6 /* KYMagicMoveTests.m */; };
+		5F1B0EB91A6A734C006F5AF6 /* MagicMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B0EB81A6A734C006F5AF6 /* MagicMoveTransition.m */; };
+		5FA3E8EF1A6CD7D500FE4AD8 /* FirstCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3E8EE1A6CD7D500FE4AD8 /* FirstCollectionViewController.m */; };
+		5FA3E8F21A6CD7EE00FE4AD8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3E8F11A6CD7EE00FE4AD8 /* SecondViewController.m */; };
+		5FA3E8F51A6CD86800FE4AD8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3E8F41A6CD86800FE4AD8 /* CollectionViewCell.m */; };
+		5FA3E8F81A6D574D00FE4AD8 /* MagicMoveInverseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3E8F71A6D574D00FE4AD8 /* MagicMoveInverseTransition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F1B0EA81A6A71A1006F5AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F1B0E861A6A71A1006F5AF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F1B0E8D1A6A71A1006F5AF6;
+			remoteInfo = KYMagicMove;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F1B0E8E1A6A71A1006F5AF6 /* KYMagicMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYMagicMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1B0E921A6A71A1006F5AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F1B0E931A6A71A1006F5AF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F1B0E951A6A71A1006F5AF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F1B0E961A6A71A1006F5AF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F1B0E9C1A6A71A1006F5AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F1B0E9E1A6A71A1006F5AF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5F1B0EA11A6A71A1006F5AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5F1B0EA71A6A71A1006F5AF6 /* KYMagicMoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYMagicMoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1B0EAC1A6A71A1006F5AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F1B0EAD1A6A71A1006F5AF6 /* KYMagicMoveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYMagicMoveTests.m; sourceTree = "<group>"; };
+		5F1B0EB71A6A734C006F5AF6 /* MagicMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveTransition.h; sourceTree = "<group>"; };
+		5F1B0EB81A6A734C006F5AF6 /* MagicMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveTransition.m; sourceTree = "<group>"; };
+		5FA3E8ED1A6CD7D500FE4AD8 /* FirstCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCollectionViewController.h; sourceTree = "<group>"; };
+		5FA3E8EE1A6CD7D500FE4AD8 /* FirstCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCollectionViewController.m; sourceTree = "<group>"; };
+		5FA3E8F01A6CD7EE00FE4AD8 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		5FA3E8F11A6CD7EE00FE4AD8 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5FA3E8F31A6CD86800FE4AD8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		5FA3E8F41A6CD86800FE4AD8 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		5FA3E8F61A6D574D00FE4AD8 /* MagicMoveInverseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveInverseTransition.h; sourceTree = "<group>"; };
+		5FA3E8F71A6D574D00FE4AD8 /* MagicMoveInverseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveInverseTransition.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F1B0E8B1A6A71A1006F5AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1B0EA41A6A71A1006F5AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F1B0E851A6A71A1006F5AF6 = {
+			isa = PBXGroup;
+			children = (
+				5F1B0E901A6A71A1006F5AF6 /* KYMagicMove */,
+				5F1B0EAA1A6A71A1006F5AF6 /* KYMagicMoveTests */,
+				5F1B0E8F1A6A71A1006F5AF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F1B0E8F1A6A71A1006F5AF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F1B0E8E1A6A71A1006F5AF6 /* KYMagicMove.app */,
+				5F1B0EA71A6A71A1006F5AF6 /* KYMagicMoveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F1B0E901A6A71A1006F5AF6 /* KYMagicMove */ = {
+			isa = PBXGroup;
+			children = (
+				5F1B0E951A6A71A1006F5AF6 /* AppDelegate.h */,
+				5F1B0E961A6A71A1006F5AF6 /* AppDelegate.m */,
+				5FA3E8ED1A6CD7D500FE4AD8 /* FirstCollectionViewController.h */,
+				5FA3E8EE1A6CD7D500FE4AD8 /* FirstCollectionViewController.m */,
+				5FA3E8F01A6CD7EE00FE4AD8 /* SecondViewController.h */,
+				5FA3E8F11A6CD7EE00FE4AD8 /* SecondViewController.m */,
+				5FA3E8F31A6CD86800FE4AD8 /* CollectionViewCell.h */,
+				5FA3E8F41A6CD86800FE4AD8 /* CollectionViewCell.m */,
+				5F1B0E9B1A6A71A1006F5AF6 /* Main.storyboard */,
+				5F1B0EB71A6A734C006F5AF6 /* MagicMoveTransition.h */,
+				5F1B0EB81A6A734C006F5AF6 /* MagicMoveTransition.m */,
+				5FA3E8F61A6D574D00FE4AD8 /* MagicMoveInverseTransition.h */,
+				5FA3E8F71A6D574D00FE4AD8 /* MagicMoveInverseTransition.m */,
+				5F1B0E9E1A6A71A1006F5AF6 /* Images.xcassets */,
+				5F1B0EA01A6A71A1006F5AF6 /* LaunchScreen.xib */,
+				5F1B0E911A6A71A1006F5AF6 /* Supporting Files */,
+			);
+			path = KYMagicMove;
+			sourceTree = "<group>";
+		};
+		5F1B0E911A6A71A1006F5AF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F1B0E921A6A71A1006F5AF6 /* Info.plist */,
+				5F1B0E931A6A71A1006F5AF6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F1B0EAA1A6A71A1006F5AF6 /* KYMagicMoveTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F1B0EAD1A6A71A1006F5AF6 /* KYMagicMoveTests.m */,
+				5F1B0EAB1A6A71A1006F5AF6 /* Supporting Files */,
+			);
+			path = KYMagicMoveTests;
+			sourceTree = "<group>";
+		};
+		5F1B0EAB1A6A71A1006F5AF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F1B0EAC1A6A71A1006F5AF6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F1B0E8D1A6A71A1006F5AF6 /* KYMagicMove */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F1B0EB11A6A71A1006F5AF6 /* Build configuration list for PBXNativeTarget "KYMagicMove" */;
+			buildPhases = (
+				5F1B0E8A1A6A71A1006F5AF6 /* Sources */,
+				5F1B0E8B1A6A71A1006F5AF6 /* Frameworks */,
+				5F1B0E8C1A6A71A1006F5AF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYMagicMove;
+			productName = KYMagicMove;
+			productReference = 5F1B0E8E1A6A71A1006F5AF6 /* KYMagicMove.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F1B0EA61A6A71A1006F5AF6 /* KYMagicMoveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F1B0EB41A6A71A1006F5AF6 /* Build configuration list for PBXNativeTarget "KYMagicMoveTests" */;
+			buildPhases = (
+				5F1B0EA31A6A71A1006F5AF6 /* Sources */,
+				5F1B0EA41A6A71A1006F5AF6 /* Frameworks */,
+				5F1B0EA51A6A71A1006F5AF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F1B0EA91A6A71A1006F5AF6 /* PBXTargetDependency */,
+			);
+			name = KYMagicMoveTests;
+			productName = KYMagicMoveTests;
+			productReference = 5F1B0EA71A6A71A1006F5AF6 /* KYMagicMoveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F1B0E861A6A71A1006F5AF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kitten Yang";
+				TargetAttributes = {
+					5F1B0E8D1A6A71A1006F5AF6 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					5F1B0EA61A6A71A1006F5AF6 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5F1B0E8D1A6A71A1006F5AF6;
+					};
+				};
+			};
+			buildConfigurationList = 5F1B0E891A6A71A1006F5AF6 /* Build configuration list for PBXProject "KYMagicMove" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F1B0E851A6A71A1006F5AF6;
+			productRefGroup = 5F1B0E8F1A6A71A1006F5AF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F1B0E8D1A6A71A1006F5AF6 /* KYMagicMove */,
+				5F1B0EA61A6A71A1006F5AF6 /* KYMagicMoveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F1B0E8C1A6A71A1006F5AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F1B0E9D1A6A71A1006F5AF6 /* Main.storyboard in Resources */,
+				5F1B0EA21A6A71A1006F5AF6 /* LaunchScreen.xib in Resources */,
+				5F1B0E9F1A6A71A1006F5AF6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1B0EA51A6A71A1006F5AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F1B0E8A1A6A71A1006F5AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA3E8F51A6CD86800FE4AD8 /* CollectionViewCell.m in Sources */,
+				5FA3E8F21A6CD7EE00FE4AD8 /* SecondViewController.m in Sources */,
+				5F1B0E971A6A71A1006F5AF6 /* AppDelegate.m in Sources */,
+				5FA3E8EF1A6CD7D500FE4AD8 /* FirstCollectionViewController.m in Sources */,
+				5F1B0E941A6A71A1006F5AF6 /* main.m in Sources */,
+				5FA3E8F81A6D574D00FE4AD8 /* MagicMoveInverseTransition.m in Sources */,
+				5F1B0EB91A6A734C006F5AF6 /* MagicMoveTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1B0EA31A6A71A1006F5AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F1B0EAE1A6A71A1006F5AF6 /* KYMagicMoveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F1B0EA91A6A71A1006F5AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F1B0E8D1A6A71A1006F5AF6 /* KYMagicMove */;
+			targetProxy = 5F1B0EA81A6A71A1006F5AF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F1B0E9B1A6A71A1006F5AF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F1B0E9C1A6A71A1006F5AF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F1B0EA01A6A71A1006F5AF6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F1B0EA11A6A71A1006F5AF6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F1B0EAF1A6A71A1006F5AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xinyu Li (XWYND9KE57)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xinyu Li (XWYND9KE57)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5F1B0EB01A6A71A1006F5AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F1B0EB21A6A71A1006F5AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KYMagicMove/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F1B0EB31A6A71A1006F5AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KYMagicMove/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5F1B0EB51A6A71A1006F5AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KYMagicMoveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYMagicMove.app/KYMagicMove";
+			};
+			name = Debug;
+		};
+		5F1B0EB61A6A71A1006F5AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KYMagicMoveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYMagicMove.app/KYMagicMove";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F1B0E891A6A71A1006F5AF6 /* Build configuration list for PBXProject "KYMagicMove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F1B0EAF1A6A71A1006F5AF6 /* Debug */,
+				5F1B0EB01A6A71A1006F5AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F1B0EB11A6A71A1006F5AF6 /* Build configuration list for PBXNativeTarget "KYMagicMove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F1B0EB21A6A71A1006F5AF6 /* Debug */,
+				5F1B0EB31A6A71A1006F5AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F1B0EB41A6A71A1006F5AF6 /* Build configuration list for PBXNativeTarget "KYMagicMoveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F1B0EB51A6A71A1006F5AF6 /* Debug */,
+				5F1B0EB61A6A71A1006F5AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F1B0E861A6A71A1006F5AF6 /* Project object */;
+}
