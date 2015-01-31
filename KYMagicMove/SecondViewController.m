@@ -42,7 +42,7 @@
         [self.percentDrivenTransition updateInteractiveTransition:progress];
     }else if (recognizer.state == UIGestureRecognizerStateCancelled || recognizer.state == UIGestureRecognizerStateEnded){
     //当手势结束，我们根据用户的手势进度来判断过渡是应该完成还是取消并相应的调用 finishInteractiveTransition 或者 cancelInteractiveTransition 方法.
-        if (progress > 0.5) {
+        if (progress > 0.3) {
             [self.percentDrivenTransition finishInteractiveTransition];
         }else{
             [self.percentDrivenTransition cancelInteractiveTransition];

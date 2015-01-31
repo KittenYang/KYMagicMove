@@ -15,7 +15,7 @@
 @implementation MagicMoveTransition
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext{
-    return 0.3f;
+    return 0.6f;
 }
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext{
@@ -44,21 +44,19 @@
     [containerView addSubview:snapShotView];
     
     //动起来。第二个控制器的透明度0~1；让截图SnapShotView的位置更新到最新；
-    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+    
+    [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0.0f usingSpringWithDamping:0.6f initialSpringVelocity:1.0f options:UIViewAnimationOptionCurveLinear animations:^{
         toVC.view.alpha = 1.0;
         snapShotView.frame = [containerView convertRect:toVC.imageViewForSecond.frame fromView:toVC.view];
-    } completion:^(BOOL finished){
+    } completion:^(BOOL finished) {
         //为了让回来的时候，cell上的图片显示，必须要让cell上的图片显示出来
         toVC.imageViewForSecond.hidden = NO;
         cell.imageView.hidden = NO;
         [snapShotView removeFromSuperview];
-        
-        
         //告诉系统动画结束
         [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
     }];
-    
-    
+
 }
 
 
