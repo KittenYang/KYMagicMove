@@ -14,6 +14,8 @@
 		5F1B0EA21A6A71A1006F5AF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B0EA01A6A71A1006F5AF6 /* LaunchScreen.xib */; };
 		5F1B0EAE1A6A71A1006F5AF6 /* KYMagicMoveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B0EAD1A6A71A1006F5AF6 /* KYMagicMoveTests.m */; };
 		5F1B0EB91A6A734C006F5AF6 /* MagicMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B0EB81A6A734C006F5AF6 /* MagicMoveTransition.m */; };
+		5F8735F71A8B5C7C000CADF4 /* MotionBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8735F41A8B5C7C000CADF4 /* MotionBlurFilter.m */; };
+		5F8735F81A8B5C7C000CADF4 /* UIView+MotionBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8735F61A8B5C7C000CADF4 /* UIView+MotionBlur.m */; };
 		5FA3E8EF1A6CD7D500FE4AD8 /* FirstCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3E8EE1A6CD7D500FE4AD8 /* FirstCollectionViewController.m */; };
 		5FA3E8F21A6CD7EE00FE4AD8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3E8F11A6CD7EE00FE4AD8 /* SecondViewController.m */; };
 		5FA3E8F51A6CD86800FE4AD8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3E8F41A6CD86800FE4AD8 /* CollectionViewCell.m */; };
@@ -44,6 +46,10 @@
 		5F1B0EAD1A6A71A1006F5AF6 /* KYMagicMoveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYMagicMoveTests.m; sourceTree = "<group>"; };
 		5F1B0EB71A6A734C006F5AF6 /* MagicMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveTransition.h; sourceTree = "<group>"; };
 		5F1B0EB81A6A734C006F5AF6 /* MagicMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveTransition.m; sourceTree = "<group>"; };
+		5F8735F31A8B5C7C000CADF4 /* MotionBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionBlurFilter.h; sourceTree = "<group>"; };
+		5F8735F41A8B5C7C000CADF4 /* MotionBlurFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionBlurFilter.m; sourceTree = "<group>"; };
+		5F8735F51A8B5C7C000CADF4 /* UIView+MotionBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MotionBlur.h"; sourceTree = "<group>"; };
+		5F8735F61A8B5C7C000CADF4 /* UIView+MotionBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MotionBlur.m"; sourceTree = "<group>"; };
 		5FA3E8ED1A6CD7D500FE4AD8 /* FirstCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCollectionViewController.h; sourceTree = "<group>"; };
 		5FA3E8EE1A6CD7D500FE4AD8 /* FirstCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCollectionViewController.m; sourceTree = "<group>"; };
 		5FA3E8F01A6CD7EE00FE4AD8 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -93,6 +99,7 @@
 		5F1B0E901A6A71A1006F5AF6 /* KYMagicMove */ = {
 			isa = PBXGroup;
 			children = (
+				5F8735F91A8B5C82000CADF4 /* MotionBlur */,
 				5F1B0E951A6A71A1006F5AF6 /* AppDelegate.h */,
 				5F1B0E961A6A71A1006F5AF6 /* AppDelegate.m */,
 				5FA3E8ED1A6CD7D500FE4AD8 /* FirstCollectionViewController.h */,
@@ -137,6 +144,17 @@
 				5F1B0EAC1A6A71A1006F5AF6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F8735F91A8B5C82000CADF4 /* MotionBlur */ = {
+			isa = PBXGroup;
+			children = (
+				5F8735F31A8B5C7C000CADF4 /* MotionBlurFilter.h */,
+				5F8735F41A8B5C7C000CADF4 /* MotionBlurFilter.m */,
+				5F8735F51A8B5C7C000CADF4 /* UIView+MotionBlur.h */,
+				5F8735F61A8B5C7C000CADF4 /* UIView+MotionBlur.m */,
+			);
+			name = MotionBlur;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +263,9 @@
 				5FA3E8EF1A6CD7D500FE4AD8 /* FirstCollectionViewController.m in Sources */,
 				5F1B0E941A6A71A1006F5AF6 /* main.m in Sources */,
 				5FA3E8F81A6D574D00FE4AD8 /* MagicMoveInverseTransition.m in Sources */,
+				5F8735F71A8B5C7C000CADF4 /* MotionBlurFilter.m in Sources */,
 				5F1B0EB91A6A734C006F5AF6 /* MagicMoveTransition.m in Sources */,
+				5F8735F81A8B5C7C000CADF4 /* UIView+MotionBlur.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 #import "FirstCollectionViewController.h"
 #import "SecondViewController.h"
 #import "CollectionViewCell.h"
+#import "UIView+MotionBlur.h"
 
 @implementation MagicMoveInverseTransition
 
@@ -25,6 +26,7 @@
     
     //在前一个VC上创建一个截图
     UIView  *snapShotView = [fromVC.imageViewForSecond snapshotViewAfterScreenUpdates:NO];
+    snapShotView.backgroundColor = [UIColor clearColor];
     snapShotView.frame = [containerView convertRect:fromVC.imageViewForSecond.frame fromView:fromVC.view];
     fromVC.imageViewForSecond.hidden = YES;
     
@@ -51,6 +53,7 @@
         cell.imageView.hidden = NO;
         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
     }];
+
 
 }
 @end

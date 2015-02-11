@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KYMagicMove/MagicMoveTransition.m"
-            timestampString = "443377097.622461"
+            timestampString = "445341208.323276"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "-animateTransition:"
             landmarkType = "5">
          </BreakpointContent>

@@ -10,6 +10,7 @@
 #import "FirstCollectionViewController.h"
 #import "SecondViewController.h"
 #import "CollectionViewCell.h"
+#import "UIView+MotionBlur.h"
 
 
 @implementation MagicMoveTransition
@@ -56,6 +57,8 @@
         //告诉系统动画结束
         [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
     }];
+    
+    
 
 }
 
