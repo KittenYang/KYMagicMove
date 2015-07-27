@@ -57,8 +57,6 @@
         //告诉系统动画结束
         [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
     }];
-    
-    
 
 }
 

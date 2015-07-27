@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rlf-Cs-Wdx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rlf-Cs-Wdx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--大图-->
@@ -13,18 +13,18 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten1" translatesAutoresizingMaskIntoConstraints="NO" id="SCi-7B-h4L">
-                                <rect key="frame" x="10" y="80" width="300" height="300"/>
+                                <rect key="frame" x="150" y="80" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="nEF-Om-d89"/>
                                     <constraint firstAttribute="height" constant="300" id="pSg-nx-woN"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ld-dy-sga">
-                                <rect key="frame" x="40" y="413" width="240" height="128"/>
+                                <rect key="frame" x="180" y="413" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="7eF-xp-5Pg"/>
@@ -44,7 +44,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="que-vk-cdX"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="imageViewForSecond" destination="SCi-7B-h4L" id="HwM-if-hvH"/>
                         <outlet property="textView" destination="9ld-dy-sga" id="NO1-4E-cSZ"/>
@@ -52,14 +51,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="438"/>
+            <point key="canvasLocation" x="1183" y="443"/>
         </scene>
         <!--First Collection View Controller-->
         <scene sceneID="nl2-JD-uTE">
             <objects>
                 <collectionViewController id="PRO-k2-13Q" userLabel="First Collection View Controller" customClass="FirstCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7Nt-Xg-Y8V">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="DFI-nI-TvY">
@@ -113,7 +112,6 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Kitten" id="okL-je-qTa"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPB-ac-c7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
