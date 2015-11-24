@@ -47,6 +47,7 @@
     //动起来。第二个控制器的透明度0~1；让截图SnapShotView的位置更新到最新；
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0.0f usingSpringWithDamping:0.6f initialSpringVelocity:1.0f options:UIViewAnimationOptionCurveLinear animations:^{
+        [containerView layoutIfNeeded];
         toVC.view.alpha = 1.0;
         snapShotView.frame = [containerView convertRect:toVC.imageViewForSecond.frame fromView:toVC.view];
     } completion:^(BOOL finished) {
