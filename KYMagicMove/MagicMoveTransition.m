@@ -49,7 +49,7 @@
     [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0.0f usingSpringWithDamping:0.6f initialSpringVelocity:1.0f options:UIViewAnimationOptionCurveLinear animations:^{
         [containerView layoutIfNeeded];
         toVC.view.alpha = 1.0;
-        snapShotView.frame = [containerView convertRect:toVC.imageViewForSecond.frame fromView:toVC.view];
+        snapShotView.frame = [containerView convertRect:toVC.imageViewForSecond.frame fromView:toVC.imageViewForSecond.superview];
     } completion:^(BOOL finished) {
         //为了让回来的时候，cell上的图片显示，必须要让cell上的图片显示出来
         toVC.imageViewForSecond.hidden = NO;
