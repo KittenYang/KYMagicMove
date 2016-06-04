@@ -27,7 +27,7 @@
     //在前一个VC上创建一个截图
     UIView  *snapShotView = [fromVC.imageViewForSecond snapshotViewAfterScreenUpdates:NO];
     snapShotView.backgroundColor = [UIColor clearColor];
-    snapShotView.frame = [containerView convertRect:fromVC.imageViewForSecond.frame fromView:fromVC.view];
+    snapShotView.frame = [containerView convertRect:fromVC.imageViewForSecond.frame fromView:fromVC.imageViewForSecond.superview];
     fromVC.imageViewForSecond.hidden = YES;
     
     //初始化后一个VC的位置
