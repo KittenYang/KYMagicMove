@@ -25,7 +25,12 @@
     UIView *containerView = [transitionContext containerView];
     
     //在前一个VC上创建一个截图
-    UIView  *snapShotView = [fromVC.imageViewForSecond snapshotViewAfterScreenUpdates:NO];
+    UIGraphicsBeginImageContextWithOptions(fromVC.imageViewForSecond.bounds.size, NO, 0);
+    [fromVC.imageViewForSecond.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    UIView *snapShotView = [[UIImageView alloc] initWithImage:image];
     snapShotView.backgroundColor = [UIColor clearColor];
     snapShotView.frame = [containerView convertRect:fromVC.imageViewForSecond.frame fromView:fromVC.imageViewForSecond.superview];
     fromVC.imageViewForSecond.hidden = YES;
