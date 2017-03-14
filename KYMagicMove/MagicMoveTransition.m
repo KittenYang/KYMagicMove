@@ -30,7 +30,12 @@
     CollectionViewCell *cell =(CollectionViewCell *)[fromVC.collectionView cellForItemAtIndexPath:[[fromVC.collectionView indexPathsForSelectedItems] firstObject]];
     fromVC.indexPath = [[fromVC.collectionView indexPathsForSelectedItems]firstObject];
 
-    UIView * snapShotView = [cell.imageView snapshotViewAfterScreenUpdates:NO];
+    UIGraphicsBeginImageContextWithOptions(cell.imageView.bounds.size, NO, 0);
+    [cell.imageView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    UIView *snapShotView = [[UIImageView alloc] initWithImage:image];
     snapShotView.frame = fromVC.finalCellRect = [containerView convertRect:cell.imageView.frame fromView:cell.imageView.superview];
     cell.imageView.hidden = YES;
 
